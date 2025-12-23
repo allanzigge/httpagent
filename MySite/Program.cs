@@ -13,3 +13,5 @@ app.MapGet("/health", (ILogger<Program> logger) =>
 
 
 app.Run();
+
+public partial class Program { }
