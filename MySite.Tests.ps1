@@ -13,8 +13,22 @@ Describe 'Connection Check' {
     It "/health returns 200" {
     $response = Invoke-WebRequest "http://127.0.0.1:$Port/health"
     $response.StatusCode | Should -Be 200
-}
+    }
 } 
+
+Describe 'Logging' {
+    It 'Log file exists'{
+        Test-Path "MySite/logs/app.log" | Should -BeTrue
+    }
+
+    It 'Log contains get request' {
+         $logFile = "MySite/logs/app.log"
+         $expectedString = "the /health endpoint was called"
+
+        $logContent = Get-Content $logFile -Raw
+        $logContent | Should -Match ([regex]::Escape($expectedString))
+    }
+}
 
 
 
