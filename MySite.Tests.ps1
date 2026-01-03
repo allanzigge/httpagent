@@ -1,14 +1,26 @@
-
-Describe 'Port Check' {
-    It 'The port for the webapp should be open' {
+BeforeAll {
         $Port = 5050
         .\run.ps1 -Port $Port
         Start-Sleep 5 # make sure its running and ready for request
+}
 
+Describe 'Connection Check' {
+    It 'Port is open' {
         $connectionTest = Test-NetConnection 127.0.0.1 -Port $Port
         $connectionTest.TcpTestSucceeded | Should -BeTrue
     } 
+
+    It "/health returns 200" {
+    $response = Invoke-WebRequest "http://127.0.0.1:$Port/health"
+    $response.StatusCode | Should -Be 200
+}
 } 
+
+
+
+
+
+
 # port is open - Test-NetConnection 127.0.0.1 -Port 5076
 # return 200
 # check log
