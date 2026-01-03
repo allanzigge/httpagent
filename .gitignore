@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# Log files - ensure file does not exists in github
+*.log
+
 # dotenv files
 .env
 

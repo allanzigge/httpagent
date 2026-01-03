@@ -16,8 +16,8 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=asp
 ### Pester Docs
 https://pester.dev/docs/quick-start
 
-
-
+```Install-Module Pester -Force ```
+```Import-Module Pester -PassThru ```
 
 
 
