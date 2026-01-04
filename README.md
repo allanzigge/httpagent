@@ -20,3 +20,5 @@ To make sure the log is created automatically, move or delete an existing log an
 I did test that Pester actually runs a test successfully, which is the ```Dummy.Tests.ps1``` file.
 
 Pester testresults are available in ```TestResults.xml```
+
+![Pester test](https://github.com/user-attachments/assets/e7e13b96-523f-4b76-a6e6-0ced216f9216)
