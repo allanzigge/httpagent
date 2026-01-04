@@ -21,20 +21,7 @@ Describe 'Logging' {
         Test-Path "MySite/logs/app.log" | Should -BeTrue
     }
 
-    It 'Log contains get request' {
-         $logFile = "MySite/logs/app.log"
-         $expectedString = "the /health endpoint was called"
-
-        $logContent = Get-Content $logFile -Raw
-        $logContent | Should -Match ([regex]::Escape($expectedString))
+    It 'Log contains get requestt'{
+        'MySite/logs/app.log' | Should -FileContentMatch 'the /health endpoint was called'
     }
 }
-
-
-
-
-
-
-# port is open - Test-NetConnection 127.0.0.1 -Port 5076
-# return 200
-# check log

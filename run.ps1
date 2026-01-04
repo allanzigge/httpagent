@@ -1,6 +1,6 @@
 # Can be run with either:
 # ".\run.ps1" 
-# ".\run.ps1 -Port 7777" or whatever port youd like 
+# ".\run.ps1 -Port 7777" or whatever port you'd like 
 
 # optional argument
 param ([int]$Port = 5050)
