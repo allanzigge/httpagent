@@ -5,7 +5,10 @@
 # optional argument
 param ([int]$Port = 5050)
 
+$env:DOTNET_LAUNCH_PROFILE = ""
+
 # url doc: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-10.0
-Start-Process dotnet "run --project MySite --urls http://localhost:$Port" -NoNewWindow
+
+Start-Process dotnet "run --project MySite --urls http://127.0.0.1:$Port" -NoNewWindow
 
 Write-Host "App has started, port: $Port"
