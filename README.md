@@ -18,3 +18,5 @@ To make sure the log is created automatically, move or delete an existing log an
 - At the moment the workflow runs with port 5050, but can be changed swiftly.
 - Pester test succeeds locally, but it seems the connection fails when running on Github Workflows - which is an issue i have not solved.
 I did test that Pester actually runs a test successfully, which is the ```Dummy.Tests.ps1``` file.
+
+Pester testresults are available in ```TestResults.xml```

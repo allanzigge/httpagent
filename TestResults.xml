@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2026-01-04" time="21.44.19">
+  <environment clr-version="9.0.10" os-version="10.0.26200" machine-name="VIVOBOOK" user="allan" nunit-version="2.5.8.0" cwd="C:\Users\allan\Documents\httpagent" user-domain="VIVOBOOK" platform="Microsoft Windows 11 Home|C:\WINDOWS|\Device\Harddisk0\Partition3" />
+  <culture-info current-culture="en-DK" current-uiculture="en-GB" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="10.8128" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\allan\Documents\httpagent\MySite.Tests.ps1" executed="True" result="Success" success="True" time="10.8128" asserts="0" description="C:\Users\allan\Documents\httpagent\MySite.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Connection Check" executed="True" result="Success" success="True" time="5.6462" asserts="0" description="Connection Check">
+            <results>
+              <test-case description="Port is open" name="Connection Check.Port is open" time="5.6257" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="/health returns 200" name="Connection Check./health returns 200" time="0.0142" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Logging" executed="True" result="Success" success="True" time="5.6999" asserts="0" description="Logging">
+            <results>
+              <test-case description="Log file exists" name="Logging.Log file exists" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Log contains get requestt" name="Logging.Log contains get requestt" time="0.0455" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
